@@ -160,7 +160,7 @@ def scrape(
     team_id: str = "",
     bot_token: str = "",
     min_message_length: int = 80,
-    cutoff_days: int = 365,
+    cutoff_days: int = 365*3,
 ):
     print(f"Beginning scrape for {user} in {team_id}...")
     bot_token = bot_token or os.environ["SLACK_BOT_TOKEN"]
